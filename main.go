@@ -1,8 +1,7 @@
-// Program solong prints out the paths of all files in the tree rooted at .
-// whose average line lengths are greater than some long threshold
-// like 1000. The purpose of solong is to detect files that would
-// add noise to search results, so you can add them to your .ignore
-// or .rgignore file.
+// The solong program prints out the paths of all files in the tree rooted at .
+// whose average line lengths are greater than some long threshold like 1000.
+// The purpose of solong is to detect files that would add noise to search
+// results, so you can add them to your .ignore or .rgignore file.
 package main
 
 import (
