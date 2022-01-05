@@ -1,4 +1,4 @@
-// Program solong prints out all the files in the tree rooted at .
+// Program solong prints out the paths of all files in the tree rooted at .
 // whose average line lengths are greater than some long threshold
 // like 1000. The purpose of solong is to detect files that would
 // add noise to search results, so you can add them to your .ignore
@@ -38,7 +38,7 @@ func solong(threshold int) error {
 		}
 		nlc := bytes.Count(bs, []byte("\n"))
 		n := len(bs)
-		if nlc == 0 || n / nlc > threshold {
+		if nlc == 0 || n/nlc > threshold {
 			fmt.Println(path)
 		}
 		return nil
