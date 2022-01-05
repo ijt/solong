@@ -5,7 +5,7 @@ The solong program prints out all the files in the tree rooted at . whose averag
 
 ## Installation
 ```sh
-$ go get github.com/ijt/solong
+$ go install github.com/ijt/solong@HEAD
 ```
 
 ## Example usage
